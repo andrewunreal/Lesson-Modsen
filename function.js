@@ -41,7 +41,20 @@
 // const secSum = numbers.map(n => n * 2); 
 // console.log (secSum)
 
-//5
-const arrString = ['valentin', 'ivan', 'dima', 'zhekich']
-const strelka = arrString.map(n => n.length);
-console.log(strelka)
+// //5
+// const arrString = ['valentin', 'ivan', 'dima', 'zhekich']
+// const strelka = arrString.map(n => n.length);
+// console.log(strelka)
+
+//6
+const arrayOfNumbers = [1, 3, 4, 8, 22, 13, 9];
+function findMaxElem (arr) {
+    let max = arr[0];
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+        max = arr[i];
+    }
+}
+return max;
+}
+console.log(findMaxElem(arrayOfNumbers));
